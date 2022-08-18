@@ -1,0 +1,319 @@
+/* general rules */
+
+:root{
+    --bg-color:#3a6cf4;
+
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* background-color: #3a6cf425;
+    outline: 1px dashed black; */
+
+}
+/* end general rules */
+/* start header section  */
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo{
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    color:#3a6cf4 ;
+}
+.navigation a{
+    color: var(--bg-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color:#601cfc ;
+}
+/* end header section  */
+/* start main section  */
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(imgs/mehdi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center  10px;
+    background-attachment: fixed;
+    /* end */
+}
+.main h2{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+
+
+}
+.main h2 span{
+    color:var(--bg-color);
+    font-weight: 600;
+    font-size: 3em;
+    display: inline-block;
+    margin-top: 10px;
+
+
+}
+.main h3 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-btn{
+    background-color: var(--bg-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9em 2.1em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+    color: white;
+
+}
+.main-btn:hover{
+    background-color: rgb(42, 42, 255);
+    transform: scale(1.1);
+    color: white;
+}
+.social-icons a{
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+
+}
+/* end main section  */
+/* start services */
+.title{
+    display: flex;
+    justify-content: center;
+    color: var(--bg-color);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow:0 5px 25px rgba(1 1 1 /15%) ;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card .icon{
+color: var(--bg-color);
+font-size: 8em;
+text-align: center;
+}
+.info {
+    text-align: center;
+}
+.info h3{
+    color: var(--bg-color);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+/* end services section*/
+/* start project section  */
+.projects{
+    background-color: black;
+
+}
+.projects .content{
+    margin-top: 30px;
+}
+.project-card{
+    background-color: white;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 20px;
+    transition: 0.7s ease;
+    opacity: 0.8;
+    
+}
+.project-card:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+.project-image img{
+width: 100%;
+}
+.project-info{
+    padding: 1em;
+}
+.project-category{
+    font-size: 0.8em;
+    color: black;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    
+}
+.more-details{
+    text-decoration: none;
+    color: var(--bg-color);
+}
+.more-details:hover{
+    color: #601cfc;
+}
+/* end project section  */
+/* start contact section */
+.contact .icon{
+    font-size: 4.5em;
+
+}
+.contact .info h3{
+    color: black;
+}
+.contact .info h3{
+    color: #000;
+}
+.contact .info p{
+    font-size: 1.2em;
+    
+}
+/* end contact section  */
+/* start footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p{
+ font-size: 1.3em;
+ font-weight: 600;
+}
+footer span{
+    color: var(--bg-color);
+}
+footer .social-icons a{
+    font-size: 1.3em;
+
+}
+/* end footer */
+
+@media (max-width:1023px) {
+    header{
+        padding: 12px 20px;
+    }
+    header .title{
+        font-size: 1.8em;
+    }
+    header .navigation{
+        display: flex;
+        gap: 5px;
+    }
+    section{
+        padding:80px 20px ;
+    }
+    .main{
+        background-position: right center;
+    }
+    .main h2{
+        font-size: 1em;
+    }
+    .main h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer p , footer .social-icons{
+        font-size: 1em;
+    }
+
+}
+@media (max-width:641px) {
+    body{
+        font-size: 16px;
+    }
+}
+@media (max-width:499px) {
+    body{
+        font-size: 16px;
+    }
+    header {
+        padding: 10px;
+    }
+    header{
+        justify-content:left;
+        gap: 2px;
+    }
+    header .logo{
+        font-size: 1.1em;
+        margin-right: 25px;
+    }
+    header .navigation a{
+        font-size: 0.9em;
+        padding: 5px 10px
+        
+        
+    }
+    .main  h2 span {
+        font-size: 2.5em;
+    }
+    .main h3{
+        font-size: 1.3em;
+    }
+    .project-card{
+        width: 90%;
+    }
+    
+}

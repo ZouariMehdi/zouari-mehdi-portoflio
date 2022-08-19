@@ -110,6 +110,9 @@ section{
     padding-right: 30px;
 
 }
+#social{
+    height: fit-content;
+}
 /* end main section  */
 /* start services */
 .title{
@@ -137,9 +140,11 @@ section{
     padding: 25px;
     margin: 15px;
     transition: 0.7s ease;
-    overflow: ellipsis;
-    
-
+    text-overflow: ellipsis;
+    height: 30em;
+}
+#social{
+    height: fit-content;
 }
 .card:hover{
     transform: scale(1.1);
@@ -200,6 +205,7 @@ text-align: center;
 }
 .project-image img{
 width: 100%;
+
 }
 .project-info{
     padding: 1em;
